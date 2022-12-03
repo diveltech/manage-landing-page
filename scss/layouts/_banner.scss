@@ -1,0 +1,33 @@
+@use "../base/vars" as var;
+
+.banner {
+  margin-block-start: 2rem;
+  padding-block: 5rem;
+  padding-inline: var.$pd-inline-section;
+  text-align: center;
+  background-image: url("/images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  color: white;
+  background-color: var.$clr-primary-1;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__headline {
+    max-width: 500px;
+    font-size: 2.25rem;
+    margin-block-end: 1rem;
+  }
+  @media (min-width: 1200px) {
+    margin-block-start: 5rem;
+    text-align: left;
+    padding-block: 2rem;
+    background-image: url("/images/bg-simplify-section-desktop.svg");
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

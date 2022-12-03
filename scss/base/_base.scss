@@ -1,0 +1,48 @@
+@use "./vars" as var;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button {
+  padding: 0;
+  outline: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+body {
+  width: 100%;
+  min-width: 375px;
+  line-height: 1.5;
+  font-family: var.$ff-body;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}

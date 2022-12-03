@@ -1,0 +1,66 @@
+@use "../base/vars" as var;
+
+.testimonials {
+  padding-block-start: 5rem;
+  overflow: hidden;
+  text-align: center;
+  &__headline {
+    font-size: 1.5rem;
+    color: var.$clr-primary-2;
+    @media (min-width: 1200px) {
+      font-size: 2rem;
+    }
+  }
+}
+.keen-slider,
+.keen-slider__slide {
+  overflow: visible !important;
+}
+.keen-slider {
+  margin-block-start: 5rem;
+}
+
+.slider-item {
+  padding-block-end: 2rem;
+  padding-inline: 2rem;
+  margin-inline-start: 1.5rem;
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var.$clr-neutral-1;
+  &__user-image {
+    width: 5rem;
+    height: 70px;
+    transform: translateY(-50%);
+    img {
+      width: 100%;
+    }
+  }
+  &__user-name {
+    font-size: 1rem;
+    font-weight: var.$fw-bold;
+    color: var.$clr-primary-2;
+  }
+  &__user-comment {
+    margin-block-start: 0.72rem;
+    font-size: var.$fs-sm;
+    color: var.$clr-neutral-3;
+  }
+}
+.slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  margin-block: 1rem;
+  &__dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 0.1rem solid var.$clr-primary-1;
+    border-radius: 100%;
+    &.is-active {
+      background-color: var.$clr-primary-1;
+    }
+  }
+}

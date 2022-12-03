@@ -1,0 +1,24 @@
+@use "../base/vars" as var;
+
+.btn-primary {
+  padding-inline: 2rem;
+  padding-block: 0.72rem;
+  border-radius: 3rem;
+  font-weight: var.$fw-medium;
+  color: white;
+  background-color: var.$clr-primary-1;
+  box-shadow: 0 0.5rem 1rem hsla(12, 88%, 59%, 0.35);
+  &:hover {
+    opacity: 0.8;
+  }
+  &--only-desktop {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &--invert {
+    color: var.$clr-primary-1;
+    background-color: white;
+  }
+}
